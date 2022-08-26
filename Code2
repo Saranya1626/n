@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int i;
+    gets(str);
+    for(i=1;str[i]!='\0';i=i+2)
+    {
+        str[i]=str[i]-32;
+    }
+     puts(str);
+    return 0;
+}
